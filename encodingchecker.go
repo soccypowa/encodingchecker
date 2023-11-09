@@ -17,7 +17,7 @@ func main() {
 	detector := chardet.NewTextDetector()
 	result, err := detector.DetectBest(file)
 	check(err)
-	fmt.Printf("Detected charset is %s", result.Charset)
+	fmt.Printf("Detected charset is: %s", result.Charset)
 }
 
 func check(err error) {
